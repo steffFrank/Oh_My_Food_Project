@@ -1,0 +1,19 @@
+{
+  "name": "oh_my_food_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/_main.scss ./assets/css/style.css --style=expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steffFrank/Oh_My_Food_Project.git"
+  },
+  "author": "Steff Frank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steffFrank/Oh_My_Food_Project/issues"
+  },
+  "homepage": "https://github.com/steffFrank/Oh_My_Food_Project#readme"
+}
