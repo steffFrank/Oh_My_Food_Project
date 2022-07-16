@@ -10,8 +10,12 @@ $clr-black        : #000;
 $clr-grey--dark   : #EDEDED;
 $clr-grey--light  : #F7F7F7;
 $clr-tertiary--new: darken($clr-tertiary, 30%);
-$bg-clr--btn    : linear-gradient(to bottom right, $clr-sedondary, $clr-primary);
-$bg-clr--heart     : linear-gradient(to top right, $clr-primary, $clr-secondary);
+
+// BACKGROUND COLORS
+$bg-clr--btn      : linear-gradient(to bottom right, $clr-sedondary, $clr-primary);
+$bg-heart         : linear-gradient(to top right, rgba($clr-primary,0), rgba($clr-secondary,0));
+$bg-heart--hover  : linear-gradient(to top right, rgba($clr-primary,1), rgba($clr-secondary,1));
+
 // FONT WEIGHTS
 
 $fw--thin          : 100;
