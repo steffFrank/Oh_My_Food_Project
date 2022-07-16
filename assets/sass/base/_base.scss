@@ -1,0 +1,37 @@
+// Base
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+body {
+    font-family: $font-family--text;
+    color: $clr-black;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font-family--title;
+    font-weight: $fw--bold;
+}
+
+h1 {
+    font-size: rem(23px);
+    font-weight: $fw--black;
+}
+
+h2 {
+    font-size: rem(22px);
+}
+
+h3 {
+    font-size: rem(18px);
+}
+
+h4 {
+    font-size: rem(14px);
+}
