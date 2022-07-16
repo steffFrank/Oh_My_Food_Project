@@ -1,0 +1,15 @@
+// MIXINS
+
+// Include block and modifier
+
+@mixin b($block) {
+    &__#{$block} {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
