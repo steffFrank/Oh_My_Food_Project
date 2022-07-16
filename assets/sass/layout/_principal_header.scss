@@ -1,0 +1,41 @@
+// HEADER WELCOME PAGE
+
+.header {
+    height: $header-height;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include b(logo) {
+        margin: auto auto rem(5px) auto ;
+    }
+    @include b(form) {
+        position: relative;
+        input {
+            height: rem(50px);
+            width: 100vw;
+            border-top: 2px solid darken($clr-grey--dark, 10%);
+            border-bottom: 1px solid $clr-grey--dark;
+            border-left: none;
+            border-right: none;
+            background-color: $clr-grey--dark;
+            padding-left: 30%;
+            &::placeholder {
+                text-transform: capitalize;
+                color: $clr-placeholder;
+                font-weight: $fw--black;
+                font-size: rem(16px);
+            }
+            &:focus {
+                outline-color: $clr-tertiary;
+                border: none;
+            }
+        }
+        i {
+            position: relative;
+            left: 20%;
+            top: 50%;
+            color: $clr-placeholder;
+        }
+        
+    }
+}

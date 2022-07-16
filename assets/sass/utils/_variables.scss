@@ -10,9 +10,11 @@ $clr-black        : #000;
 $clr-grey--dark   : #EDEDED;
 $clr-grey--light  : #F7F7F7;
 $clr-tertiary--new: darken($clr-tertiary, 30%);
+$clr-placeholder   : darken($clr-grey--dark, 65%);
+                
 
 // BACKGROUND COLORS
-$bg-clr--btn      : linear-gradient(to bottom right, $clr-sedondary, $clr-primary);
+$bg-clr--btn      : linear-gradient(to bottom right, $clr-secondary, $clr-primary);
 $bg-heart         : linear-gradient(to top right, rgba($clr-primary,0), rgba($clr-secondary,0));
 $bg-heart--hover  : linear-gradient(to top right, rgba($clr-primary,1), rgba($clr-secondary,1));
 
@@ -38,10 +40,18 @@ $fs--line          : 24px;
 $card-shadow       : 0 5px 5px 5px rgba(0,0,0,0.2);
 $button-shadow     : 0 3px 3px 3px rgba(0,0,0,0.3);
 
+// HEIGHTS
+
+$header-height      : 13vh;
+$main-height        : 42vh;
+
+// MARGINS
+
+$card-gap           : rem(20px);
 // Breakpoints
 
 $breakpoints : (
-    tablet: 769px, 
+    tablet: 768px, 
     laptop: 992px, 
     desktop:1200px);
 

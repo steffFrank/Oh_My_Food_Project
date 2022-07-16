@@ -21,8 +21,10 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: rem(23px);
-    font-weight: $fw--black;
+    font-size: rem(28px);
+    &:first-letter {
+        text-transform: lowercase;
+    }
 }
 
 h2 {

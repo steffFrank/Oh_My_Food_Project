@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Shrikhand", cursive;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+h1:first-letter {
+  text-transform: lowercase;
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.75rem;
+}
+
+.header {
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__logo {
+  margin: auto auto 0.3125rem auto;
+}
+.header__form {
+  position: relative;
+}
+.header__form input {
+  height: 3.125rem;
+  width: 100vw;
+  border-top: 2px solid #d4d4d4;
+  border-bottom: 1px solid #EDEDED;
+  border-left: none;
+  border-right: none;
+  background-color: #EDEDED;
+  padding-left: 30%;
+}
+.header__form input::placeholder {
+  text-transform: capitalize;
+  color: #474747;
+  font-weight: 900;
+  font-size: 1rem;
+}
+.header__form input:focus {
+  outline-color: #99E2D0;
+  border: none;
+}
+.header__form i {
+  position: relative;
+  left: 20%;
+  top: 50%;
+  color: #474747;
+}
+
+/*# sourceMappingURL=style.css.map */
