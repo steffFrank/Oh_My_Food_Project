@@ -1,0 +1,8 @@
+//=======================================
+// Helpers Functions
+//=======================================
+@use "sass:math";
+// Function to convert px to rem
+@function rem($value, $context: $fs__text) {
+    @return math.div($value, $context) * 1rem;
+}
