@@ -1,6 +1,6 @@
 // All the variables here
 
-//colors
+//COLORS
 
 $clr-primary      : #9356DC;
 $clr-secondary    : #FF79DA;
@@ -9,13 +9,38 @@ $clr-white        : #fff;
 $clr-black        : #000;
 $clr-grey--dark   : #EDEDED;
 $clr-grey--light  : #F7F7F7;
-
-// fonts weight
+$clr-tertiary--new: darken($clr-tertiary, 30%);
+$bg-clr--btn    : linear-gradient(to bottom right, $clr-sedondary, $clr-primary);
+$bg-clr--heart     : linear-gradient(to top right, $clr-primary, $clr-secondary);
+// FONT WEIGHTS
 
 $fw--thin          : 100;
 $fw--light         : 300;
 $fw--regular       : 400;
 $fw--bold          : 700;
 $fw--black         : 900;
+
+// FONTS FAMILY
+
+$font-family--title: "Shrikhand", cursive;
+$font-family--text : "Roboto", sans-serif;
+
+// FONTS SIZE 
+
+$fs--text          : 16px;
+$fs--line          : 24px;
+
+// SHADOWS
+$card-shadow       : 0 5px 5px 5px rgba(0,0,0,0.2);
+$button-shadow     : 0 3px 3px 3px rgba(0,0,0,0.3);
+
+// Breakpoints
+
+$breakpoints : (
+    tablet: 769px, 
+    laptop: 992px, 
+    desktop:1200px);
+
+// ANIMATIONS   
 
 
