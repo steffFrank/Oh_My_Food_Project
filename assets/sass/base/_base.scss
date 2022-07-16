@@ -1,12 +1,14 @@
 // Base
 
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    &::first-letter {
-        text-transform: uppercase;
-    }
+}
+
+*::first-letter {
+    text-transform: uppercase;
 }
 
 body {
@@ -16,7 +18,6 @@ body {
 
 h1, h2, h3, h4 {
     font-family: $font-family--title;
-    font-weight: $fw--regular;
 }
 
 h1 {
