@@ -1,0 +1,19 @@
+// Main Section Rules
+
+.main {
+    height: $main-height;
+    padding: rem($card-gap * 2);
+    text-align: center;
+    background-color: $clr-grey--light;
+    margin-bottom: rem($margin-bottom);
+    @include b(title) {
+        font-family: $font-family--text;
+        font-weight: bold;
+        margin-bottom: rem(10px);
+    }
+    @include b(subtitle) {
+        margin-bottom: rem(25px);
+        color: $clr-text--grey;
+        font-size: rem(14px);
+    }
+}
