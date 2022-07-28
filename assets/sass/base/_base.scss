@@ -17,7 +17,7 @@ body {
     line-height: $line-height;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h4 {
     font-family: $font-family--title;
 }
 
@@ -39,7 +39,7 @@ h3 {
 }
 
 h4 {
-    font-size: rem(14px);
+    font-size: rem(16px);
 }
 
 a, a:visited, a:active{
