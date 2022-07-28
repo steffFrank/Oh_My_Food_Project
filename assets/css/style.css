@@ -64,13 +64,37 @@ a, a:visited, a:active {
 
 .operations__card {
   position: relative;
-  width: 100%;
-  height: 80px;
-  padding: 1.875rem;
+  width: 95%;
+  max-width: 400px;
+  margin: auto;
+  height: 75px;
+  padding-top: 5px;
   background-color: #EAEAEA;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5625rem;
   border-radius: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.operations__card div {
+  position: relative;
+  top: 35%;
+  left: -12px;
+}
+.operations__card p {
+  text-align: center;
+  font-weight: 700;
+}
+.operations__card i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 10%;
+}
+.operations__card:hover {
+  background-color: #f2eafb;
+}
+.operations__card:hover i {
+  color: #9356DC;
+  font-size: 18px;
 }
 
 .circle-1 {
@@ -166,7 +190,7 @@ footer {
   color: #fff;
   background-color: #383838;
   justify-content: space-around;
-  padding: 1.25rem;
+  padding: 1.5625rem;
 }
 footer h4 {
   margin-bottom: 0.625rem;
@@ -188,7 +212,7 @@ footer a::first-letter {
 }
 
 .main {
-  padding: 2.5rem 1.25rem;
+  padding: 3.125rem 1.5625rem;
   text-align: center;
   background-color: #F6F6F6;
   margin-bottom: 3.125rem;
@@ -196,7 +220,7 @@ footer a::first-letter {
 .main__title {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 1.5625rem 0;
 }
 .main__subtitle {
   margin-bottom: 1.875rem;
@@ -210,7 +234,7 @@ footer a::first-letter {
 .operations {
   width: 90vw;
   margin: auto;
-  margin-bottom: 3.125rem;
+  margin-bottom: 3.75rem;
 }
 .operations__title {
   margin-bottom: 1.25rem;

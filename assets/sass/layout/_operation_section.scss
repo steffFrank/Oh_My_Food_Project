@@ -3,9 +3,8 @@
 .operations {
     width: 90vw;
     margin: auto;
-    margin-bottom: rem($margin-bottom);
+    margin-bottom: rem($margin-bottom + 10px);
     @include b(title) {
         margin-bottom: rem(20px);
     }
-    
 }
