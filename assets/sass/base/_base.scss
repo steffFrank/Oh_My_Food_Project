@@ -33,7 +33,9 @@ h2 {
 }
 
 h3 {
-    font-size: rem(18px);
+    font-size: rem(23px);
+    font-family: $font-family--text;
+    font-weight: $fw--bold;
 }
 
 h4 {
