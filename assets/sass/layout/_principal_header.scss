@@ -3,11 +3,12 @@
 .header {
     height: $header-height;
     background-color: $clr-white;
-    z-index: 10;
+    margin-bottom: rem(10px);
     @include b(logo) {
         text-align: center;
-        margin:10px;
-        margin-bottom: 0;
+        margin: 10px 0 0 0;
+        position: relative;
+        top: 10%;
     }
     @include b(form) {
         input {
@@ -37,6 +38,5 @@
             top: 35px;
             color: $clr-placeholder;
         }
-        
     }
 }
