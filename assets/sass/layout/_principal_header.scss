@@ -3,7 +3,6 @@
 .header {
     height: $header-height;
     background-color: $clr-white;
-    margin-bottom: rem(10px);
     @include b(logo) {
         text-align: center;
         margin: 10px 0 0 0;
