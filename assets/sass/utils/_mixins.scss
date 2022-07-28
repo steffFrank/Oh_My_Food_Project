@@ -13,3 +13,19 @@
         @content;
     }
 }
+
+@mixin circle-numbered($number: 1, $bg-color: $clr-primary, $color: $clr-white, $size: 25px) {
+    position: relative;
+    width: $size;
+    height: $size;
+    background-color: $bg-color;
+    border-radius: 50%;
+    &::before {
+        content: "#{$number}";
+        color: $color;
+        position: absolute;
+        left: 33%;
+        top: 20%;
+        font-size: 15px;
+    }
+}

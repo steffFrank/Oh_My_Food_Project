@@ -1,0 +1,14 @@
+// Rules for the numbered circles
+
+.circle-1 {
+    @include circle-numbered(1);
+}
+
+
+.circle-2 {
+    @include circle-numbered(2);
+}
+
+.circle-3 {
+    @include circle-numbered(3);
+}
