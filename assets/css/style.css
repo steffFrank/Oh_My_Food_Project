@@ -228,7 +228,6 @@ a, a:visited, a:active {
 }
 
 footer {
-  height: 17vh;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -237,10 +236,10 @@ footer {
   padding: 1.5625rem;
 }
 footer h4 {
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.25rem;
 }
-footer i {
-  font-size: 0.625rem;
+footer li {
+  margin-bottom: 10px;
 }
 footer li:first-child i {
   margin-right: 10px;
@@ -248,8 +247,12 @@ footer li:first-child i {
 footer li:nth-child(2) i {
   margin-right: 8px;
 }
+footer i {
+  font-size: 0.75rem;
+}
 footer a {
   color: #fff;
+  font-size: 16px;
 }
 footer a::first-letter {
   text-transform: uppercase;

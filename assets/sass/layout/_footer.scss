@@ -1,7 +1,6 @@
 // Footer Rules
 
 footer {
-    height: 17vh;
     display: flex;
     flex-direction: column;
     color: $clr-white;
@@ -9,27 +8,26 @@ footer {
     justify-content: space-around;
     padding: rem($card-gap);
     h4 {
-        margin-bottom: rem(10px);
+        margin-bottom: rem(20px);
     }
-
+    li {
+        margin-bottom: 10px;
+        &:first-child i {
+            margin-right: 10px;
+        }
+        &:nth-child(2) i{
+            margin-right: 8px;
+        }
+    }
     i {
-        font-size: rem(10px);
+        font-size: rem(12px);
     }
-    li:first-child i {
-        margin-right: 10px;
-    }
-    li:nth-child(2) i{
-        margin-right: 8px;
-    }
-
+    
     a {
         color: $clr-white;
+        font-size: 16px;
         &::first-letter {
             text-transform: uppercase;
         }
     }
-
-
-
-
 }
