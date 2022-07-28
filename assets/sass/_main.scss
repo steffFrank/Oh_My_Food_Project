@@ -2,8 +2,9 @@
 
 //utils
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
+@import "./utils/functions";
+
 
 //vendors
 // NO VENDORS FOR THIS PROJECT
@@ -11,11 +12,14 @@
 @import "./base/base";
 
 //components
-
+@import "./components/button";
+@import "./components/operation_card";
 
 //layout
 @import "./layout/principal_header";
-
+@import "./layout/footer";
+@import "./layout/principal_main";
+@import "./layout/operation_section";
 //pages
 
 //themes

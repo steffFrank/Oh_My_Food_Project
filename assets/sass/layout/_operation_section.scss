@@ -1,0 +1,11 @@
+// Operation Section
+
+.operations {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: rem($margin-bottom);
+    @include b(title) {
+        margin-bottom: rem(20px);
+    }
+    
+}

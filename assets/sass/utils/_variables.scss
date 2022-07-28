@@ -7,10 +7,11 @@ $clr-secondary    : #FF79DA;
 $clr-tertiary     : #99E2D0;
 $clr-white        : #fff;
 $clr-black        : #000;
-$clr-grey--dark   : #EDEDED;
-$clr-grey--light  : #F7F7F7;
+$clr-grey--dark   : #EAEAEA;
+$clr-grey--light  : #F6F6F6;
 $clr-tertiary--new: darken($clr-tertiary, 30%);
 $clr-placeholder   : darken($clr-grey--dark, 65%);
+$clr-text--grey    : rgba($clr-black, 0.5);
                 
 
 // BACKGROUND COLORS
@@ -36,22 +37,24 @@ $font-family--text : "Roboto", sans-serif;
 
 $fs--text          : 16px;
 $fs--line          : 24px;
+$line-height       : 1.2;
 
 // SHADOWS
-$card-shadow       : 0 5px 5px 5px rgba(0,0,0,0.2);
+$card-shadow       : 0 4px 6px rgba(0,0,0,0.2);
 $btn-shadow        : 0 2px 5px 3px rgba(0,0,0,0.3);
 $btn-shadow--hover : 0 3px 5px 5px rgba(0,0,0,0.3);
 
 // HEIGHTS
 $header-height     : 13vh;
-$main-height       : 42vh;
+$main-height       : 32vh;
 
 // MARGINS
 $card-gap          : 20px;
+$margin-bottom     : 50px;
 
 // Border radius
 
-$btn-radius        : 20px;
+$btn-radius        : 22px;
 // Breakpoints
 
 $breakpoints : (

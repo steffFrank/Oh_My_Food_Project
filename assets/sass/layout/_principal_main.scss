@@ -1,19 +1,22 @@
 // Main Section Rules
 
 .main {
-    height: $main-height;
-    padding: rem($card-gap * 2);
+    // height: $main-height;
+    padding: rem($card-gap * 2) rem($card-gap);
     text-align: center;
     background-color: $clr-grey--light;
     margin-bottom: rem($margin-bottom);
     @include b(title) {
         font-family: $font-family--text;
         font-weight: bold;
-        margin-bottom: rem(10px);
+        margin: 0 0 rem($card-gap) 0;
     }
     @include b(subtitle) {
-        margin-bottom: rem(25px);
+        margin-bottom: rem(30px);
         color: $clr-text--grey;
-        font-size: rem(14px);
+        font-size: rem(16px);
+    }
+    button {
+        margin-bottom: rem(20px);
     }
 }
