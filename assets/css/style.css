@@ -190,6 +190,45 @@ a, a:visited, a:active {
   background: linear-gradient(to top right, #9356dc, #ff79da);
 }
 
+.card {
+  position: relative;
+  margin-bottom: 0.875rem;
+}
+.card__text {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 0.8125rem 0.625rem;
+}
+.card h4 {
+  margin-bottom: 0.3125rem;
+}
+.card p {
+  font-size: 0.9375rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.card span {
+  position: absolute;
+  right: 1.25rem;
+  font-weight: 700;
+}
+.card__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 3.75rem;
+  border-radius: 0 15px 15px 0;
+  background-color: #99e2d0;
+}
+.card__button .fa-circle-check {
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  font-size: 1.3125rem;
+  color: white;
+}
+
 .header {
   height: 13vh;
   background-color: #fff;
@@ -344,6 +383,9 @@ footer a::first-letter {
   color: rgba(0, 0, 0, 0.8);
   font-weight: 100;
 }
+.section h4 {
+  color: rgba(0, 0, 0, 0.8);
+}
 .section .line {
   width: 2.5rem;
   height: 0.1875rem;
@@ -352,6 +394,11 @@ footer a::first-letter {
 }
 .section .btn {
   width: 185px;
+}
+
+.menu {
+  display: grid;
+  gap: 1.875rem;
 }
 
 /*# sourceMappingURL=style.css.map */

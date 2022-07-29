@@ -26,6 +26,10 @@
         font-weight: $fw--thin;
     }
 
+    h4 {
+        color: rgba($clr-black, 0.8);
+    }
+
     .line {
         width: rem(40px);
         height: rem(3px);

@@ -1,0 +1,41 @@
+// Rules for the card
+
+.card {
+    position: relative;
+    margin-bottom: rem(14px);
+    @include b(text) {
+        background-color: $clr-white;
+        border-radius: $card-radius;
+        box-shadow: $card-shadow;
+        padding: rem(13px) rem(10px);
+    }
+    h4 {
+        margin-bottom: rem(5px);
+    }
+    p {
+        font-size: rem(15px);
+        color: rgba($clr-black, 0.8);
+    }
+    span {
+        position: absolute;
+        right: rem(20px);
+        font-weight: $fw--bold;
+    }
+
+    @include b(button) {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: rem(60px);
+        border-radius: 0 $card-radius $card-radius 0;
+        background-color: rgba($clr-tertiary, 1);
+        .fa-circle-check {
+            position: absolute;
+            left: 30%;
+            top: 35%;
+            font-size: rem(21px);
+            color: rgba($clr-white, 1);
+        }
+    }
+}
