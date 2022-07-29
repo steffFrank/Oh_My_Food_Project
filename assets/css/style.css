@@ -320,4 +320,38 @@ footer a::first-letter {
   bottom: 5px;
 }
 
+.section {
+  background-color: #F6F6F6;
+  border-radius: 2.5rem 2.5rem 0 0;
+  position: relative;
+  bottom: 3.75rem;
+  padding: 2.1875rem 1.25rem;
+}
+.section__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+}
+.section h2 {
+  font-size: 1.75rem;
+}
+.section i {
+  font-size: 1.625rem;
+}
+.section h3 {
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 100;
+}
+.section .line {
+  width: 2.5rem;
+  height: 0.1875rem;
+  background-color: #99E2D0;
+  margin: 0.25rem 0 0.625rem 0;
+}
+.section .btn {
+  width: 185px;
+}
+
 /*# sourceMappingURL=style.css.map */
