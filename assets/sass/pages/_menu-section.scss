@@ -11,6 +11,9 @@
         justify-content: space-between;
         margin-bottom: rem(30px);
     }
+    h3,h4 {
+        font-family: $font-family--text;
+    }
 
     h2 {
         font-size: rem(28px);
@@ -23,11 +26,12 @@
         font-size: rem(15px);
         text-transform: uppercase;
         color: $clr-title--menu;
-        font-weight: $fw--thin;
+        font-weight: $fw--light;
     }
 
     h4 {
-        color: rgba($clr-black, 0.8);
+        font-size: rem(17px);
+        font-weight: $fw--bold;
     }
 
     .line {

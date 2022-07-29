@@ -371,6 +371,9 @@ footer a::first-letter {
   justify-content: space-between;
   margin-bottom: 1.875rem;
 }
+.section h3, .section h4 {
+  font-family: "Roboto", sans-serif;
+}
 .section h2 {
   font-size: 1.75rem;
 }
@@ -381,10 +384,11 @@ footer a::first-letter {
   font-size: 0.9375rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 100;
+  font-weight: 300;
 }
 .section h4 {
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.0625rem;
+  font-weight: 700;
 }
 .section .line {
   width: 2.5rem;
