@@ -6,6 +6,8 @@
     position: relative;
     bottom: rem(70px);
     padding: rem(35px) rem(20px);
+    height: 100vh;
+    margin-bottom: rem(315px);
     @include b(title) {
         display: flex;
         justify-content: space-between;
@@ -38,11 +40,11 @@
         width: rem(40px);
         height: rem(3px);
         background-color: $clr-tertiary;
-        margin: rem(4px) 0 rem(10px) 0;
+        margin: rem(4px) 0 rem(14px) 0;
     }
     .button-div {
         width: 185px;
-        margin: rem(50px) auto;
+        margin: rem(40px) auto;
     }
     .btn {
         width: 100%;
