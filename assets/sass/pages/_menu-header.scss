@@ -1,0 +1,22 @@
+// Rules for the header menu pages
+
+.menu-header {
+    @include b(logo) {
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-size: rem(20px);
+            color: rgba($clr-black, 0.8);
+            position: relative;
+            right: 20%;
+        }
+    }
+    @include b(img) {
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        bottom: 5px;
+    }
+}
