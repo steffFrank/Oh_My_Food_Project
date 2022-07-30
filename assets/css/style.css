@@ -24,9 +24,29 @@ h1 {
 h1:first-letter {
   text-transform: lowercase;
 }
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.125rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
 h2 {
   font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 2.125rem;
+  }
 }
 
 h3 {
@@ -34,14 +54,44 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 1.6875rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h3 {
+    font-size: 1.9375rem;
+  }
+}
 
 h4 {
   font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h4 {
+    font-size: 1.5rem;
+  }
 }
 
 a, a:visited, a:active {
   text-decoration: none;
   font-size: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  a, a:visited, a:active {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  a, a:visited, a:active {
+    font-size: 1.25rem;
+  }
 }
 
 .btn {
@@ -303,6 +353,11 @@ footer {
   justify-content: space-around;
   padding: 1.5625rem;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 2.34375rem;
+  }
+}
 footer h4 {
   margin-bottom: 1.25rem;
 }
@@ -318,9 +373,29 @@ footer li:nth-child(2) i {
 footer i {
   font-size: 0.75rem;
 }
+@media screen and (min-width: 768px) {
+  footer i {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer i {
+    font-size: 1.25rem;
+  }
+}
 footer a {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  footer a {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer a {
+    font-size: 1.5rem;
+  }
 }
 footer a::first-letter {
   text-transform: uppercase;

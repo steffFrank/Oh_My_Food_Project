@@ -7,6 +7,9 @@ footer {
     background-color: darken($clr-grey--dark, 70%);
     justify-content: space-around;
     padding: rem($card-gap);
+    @include breakpoint(tablet) {
+        padding: rem($card-gap * 1.5);
+    }
     h4 {
         margin-bottom: rem(20px);
     }
@@ -21,11 +24,23 @@ footer {
     }
     i {
         font-size: rem(12px);
+        @include breakpoint(tablet) {
+            font-size: rem(16px);
+        }
+        @include breakpoint(laptop) {
+            font-size: rem(20px);
+        }
     }
     
     a {
         color: $clr-white;
-        font-size: 16px;
+        font-size: rem(16px);
+        @include breakpoint(tablet) {
+            font-size: rem(20px);
+        }
+        @include breakpoint(laptop) {
+            font-size: rem(24px);
+        }
         &::first-letter {
             text-transform: uppercase;
         }
