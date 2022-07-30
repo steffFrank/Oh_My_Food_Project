@@ -111,6 +111,12 @@ a, a:visited, a:active {
   box-shadow: 0 3px 5px 5px rgba(0, 0, 0, 0.3);
   background: linear-gradient(to bottom right, #ff93e1, #a16be0);
 }
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 1.25rem;
+    padding: 1.25rem 1.5rem;
+  }
+}
 
 .operations__card {
   position: relative;
@@ -440,15 +446,46 @@ footer a::first-letter {
   background-color: #F6F6F6;
   margin-bottom: 3.125rem;
 }
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 3.125rem 6.25rem;
+    margin: 3.125rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main {
+    padding: 4.6875rem 12.5rem;
+  }
+}
 .main__title {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin: 0 0 1.5625rem 0;
 }
+@media screen and (min-width: 768px) {
+  .main__title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main__title {
+    font-size: 2.875rem;
+  }
+}
 .main__subtitle {
   margin-bottom: 1.875rem;
   color: rgba(0, 0, 0, 0.5);
   font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .main__subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main__subtitle {
+    font-size: 1.875rem;
+  }
 }
 .main button {
   margin-bottom: 1.25rem;

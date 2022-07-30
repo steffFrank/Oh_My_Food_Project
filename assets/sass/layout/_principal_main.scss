@@ -1,20 +1,38 @@
 // Main Section Rules
 
 .main {
-    // height: $main-height;
     padding: rem($card-gap * 2) rem($card-gap);
     text-align: center;
     background-color: $clr-grey--light;
     margin-bottom: rem($margin-bottom);
+    @include breakpoint(tablet) {
+        padding: rem($card-gap * 2) rem($card-gap * 4);
+        margin: rem($margin-bottom);
+    }
+    @include breakpoint(laptop) {
+        padding: rem($card-gap * 3) rem($card-gap * 8);
+    }
     @include b(title) {
         font-family: $font-family--text;
         font-weight: bold;
         margin: 0 0 rem($card-gap) 0;
+        @include breakpoint(tablet) {
+            font-size: rem(40px);
+        }
+        @include breakpoint(laptop) {
+            font-size: rem(46px);
+        }
     }
     @include b(subtitle) {
         margin-bottom: rem(30px);
         color: $clr-text--grey;
         font-size: rem(16px);
+        @include breakpoint(tablet) {
+            font-size: rem(24px);
+        }
+        @include breakpoint(laptop) {
+            font-size: rem(30px);
+        }
     }
     button {
         margin-bottom: rem(20px);

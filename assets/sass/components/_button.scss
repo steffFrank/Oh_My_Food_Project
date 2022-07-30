@@ -16,4 +16,8 @@
         box-shadow: $btn-shadow--hover;
         background: $bg-btn--hover;
     }
+    @include breakpoint(tablet) {
+        font-size: rem(20px);
+        padding: rem(20px) rem(24px);
+    }
 }
