@@ -362,17 +362,25 @@ footer a::first-letter {
 
 .section {
   background-color: #F6F6F6;
-  border-radius: 2.5rem 2.5rem 0 0;
   position: relative;
-  bottom: 4.375rem;
-  padding: 2.1875rem 1.25rem;
-  height: 100vh;
-  margin-bottom: 19.6875rem;
+  padding: 0 0.875rem 1.875rem 0.875rem;
+}
+.section::before {
+  content: " ";
+  position: absolute;
+  top: -4.375rem;
+  left: 0;
+  height: 4.375rem;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 2.5rem 2.5rem 0 0;
 }
 .section__title {
+  position: relative;
+  bottom: 1.875rem;
+  padding: 0 1.25rem 0 0.3125rem;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.875rem;
 }
 .section h3, .section h4 {
   font-family: "Roboto", sans-serif;
@@ -388,6 +396,7 @@ footer a::first-letter {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 300;
+  margin: 0 0 0 0.3125rem;
 }
 .section h4 {
   font-size: 1.0625rem;

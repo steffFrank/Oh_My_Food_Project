@@ -2,16 +2,25 @@
 
 .section {
     background-color: $clr-grey--light;
-    border-radius: rem(40px) rem(40px) 0 0;
     position: relative;
-    bottom: rem(70px);
-    padding: rem(35px) rem(20px);
-    height: 100vh;
-    margin-bottom: rem(315px);
+    padding: 0 rem(14px) rem(30px) rem(14px);
+    &::before {
+        content: " ";
+        position: absolute;
+        top: rem(-70px);
+        left:0;
+        height: rem(70px);
+        width: 100%;
+        background-color: $clr-grey--light;
+        border-radius: rem(40px) rem(40px) 0 0;
+
+    }
     @include b(title) {
+        position: relative;
+        bottom: rem(30px);
+        padding: 0 rem(20px) 0 rem(5px);
         display: flex;
         justify-content: space-between;
-        margin-bottom: rem(30px);
     }
     h3,h4 {
         font-family: $font-family--text;
@@ -29,6 +38,7 @@
         text-transform: uppercase;
         color: $clr-title--menu;
         font-weight: $fw--light;
+        margin: 0 0 0 rem(5px);
     }
 
     h4 {
