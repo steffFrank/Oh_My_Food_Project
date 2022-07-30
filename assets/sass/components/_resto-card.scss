@@ -11,10 +11,26 @@
 
     img {
         width: 100%;
-        height: 170px;
+        height: 175px;
         border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
+    @include b(img) {
+        width: 100%;
+        height: 170px;
+        border-radius: 20px 20px 0 0;
+    }
+    @each $var, $img in $bg-images {
+        .resto#{$var} {
+            background: url("../images/restaurants/#{$img}") no-repeat bottom;
+            background-size: cover;
+        }
+        @if $var == 2 {
+            .resto#{$var} {
+                background-position: 40% 60%;
+            }
+        }
+    }  
     @include b(new) {
         position: absolute;
         background-color: $clr-tertiary;
@@ -30,9 +46,11 @@
         padding: 15px 10px;
         display: flex;
         justify-content: space-between;
-        
         h4 {
             margin-bottom: 5px;
+            font-family: $font-family--text;
+            font-weight: $fw--bold;
+            font-size: rem(18px);
         }
         p {
             font-size: rem(18px);

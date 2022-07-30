@@ -156,9 +156,33 @@ a, a:visited, a:active {
 }
 .resto-card img {
   width: 100%;
-  height: 170px;
+  height: 175px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
+}
+.resto-card__img {
+  width: 100%;
+  height: 170px;
+  border-radius: 20px 20px 0 0;
+}
+.resto-card .resto1 {
+  background: url("../images/restaurants/la_palette.jpg") no-repeat bottom;
+  background-size: cover;
+}
+.resto-card .resto2 {
+  background: url("../images/restaurants/la_note.jpg") no-repeat bottom;
+  background-size: cover;
+}
+.resto-card .resto2 {
+  background-position: 40% 60%;
+}
+.resto-card .resto3 {
+  background: url("../images/restaurants/france.jpg") no-repeat bottom;
+  background-size: cover;
+}
+.resto-card .resto4 {
+  background: url("../images/restaurants/delice.jpg") no-repeat bottom;
+  background-size: cover;
 }
 .resto-card__new {
   position: absolute;
@@ -178,6 +202,9 @@ a, a:visited, a:active {
 }
 .resto-card__description h4 {
   margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
 }
 .resto-card__description p {
   font-size: 1.125rem;
@@ -329,7 +356,7 @@ footer a::first-letter {
 
 .restaurants {
   background-color: #F6F6F6;
-  padding: 3.4375rem 20px;
+  padding: 4.0625rem 20px;
 }
 .restaurants h3 {
   margin-bottom: 25px;

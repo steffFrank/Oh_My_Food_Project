@@ -1,5 +1,5 @@
 // All the variables here
-
+@use "sass:map";
 //COLORS
 
 $clr-primary      : #9356DC;
@@ -61,6 +61,15 @@ $breakpoints : (
     tablet: 768px, 
     laptop: 992px, 
     desktop:1200px);
+
+// Background Images
+
+$bg-images : (
+    1: "la_palette.jpg",
+    2: "la_note.jpg",
+    3: "france.jpg",
+    4: "delice.jpg"
+)
 
 // ANIMATIONS   
 
