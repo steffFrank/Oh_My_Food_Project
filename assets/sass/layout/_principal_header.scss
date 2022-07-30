@@ -8,11 +8,19 @@
         margin: 10px 0 0 0;
         position: relative;
         top: 10%;
+        @include breakpoint(tablet) {
+            margin: 10px 0 15px 0;
+        }
     }
     @include b(form) {
+        width: 100vw;
+        margin: auto;
+        @include breakpoint(tablet) {
+            width: 70vw;
+        }
         input {
             height: rem(50px);
-            width: 100vw;
+            width: 100%;
             border-top: 2px solid darken($clr-grey--dark, 10%);
             border-bottom: 1px solid $clr-grey--dark;
             border-left: none;
@@ -20,11 +28,20 @@
             background-color: $clr-grey--dark;
             padding-left: 40%;
             font-size: rem(16px);
+            @include breakpoint(tablet) {
+                height: rem(65px);
+                border: 1px solid $clr-grey--dark;
+                border-radius: 10px;
+                font-size: rem(20px);
+            }
             &::placeholder {
                 text-transform: capitalize;
                 color: $clr-placeholder;
                 font-weight: $fw--black;
                 font-size: rem(16px);
+                @include breakpoint(tablet) {
+                    font-size: rem(20px);
+                }
             }
             &:focus {
                 outline-color: $clr-tertiary;
@@ -36,6 +53,10 @@
             left: 30%;
             top: 35px;
             color: $clr-placeholder;
+            @include breakpoint(tablet) {
+                font-size: rem(20px);
+                top: 40px;
+            }
         }
     }
 }

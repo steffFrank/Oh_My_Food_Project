@@ -317,9 +317,23 @@ a, a:visited, a:active {
   position: relative;
   top: 10%;
 }
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin: 10px 0 15px 0;
+  }
+}
+.header__form {
+  width: 100vw;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__form {
+    width: 70vw;
+  }
+}
 .header__form input {
   height: 3.125rem;
-  width: 100vw;
+  width: 100%;
   border-top: 2px solid #d1d1d1;
   border-bottom: 1px solid #EAEAEA;
   border-left: none;
@@ -328,11 +342,24 @@ a, a:visited, a:active {
   padding-left: 40%;
   font-size: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .header__form input {
+    height: 4.0625rem;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    font-size: 1.25rem;
+  }
+}
 .header__form input::placeholder {
   text-transform: capitalize;
   color: #444444;
   font-weight: 900;
   font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .header__form input::placeholder {
+    font-size: 1.25rem;
+  }
 }
 .header__form input:focus {
   outline-color: #99E2D0;
@@ -343,6 +370,12 @@ a, a:visited, a:active {
   left: 30%;
   top: 35px;
   color: #444444;
+}
+@media screen and (min-width: 768px) {
+  .header__form i {
+    font-size: 1.25rem;
+    top: 40px;
+  }
 }
 
 footer {
