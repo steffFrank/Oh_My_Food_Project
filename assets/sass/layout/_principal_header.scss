@@ -16,7 +16,7 @@
         width: 100vw;
         margin: auto;
         @include breakpoint(tablet) {
-            width: 70vw;
+            width: 60%;
         }
         input {
             height: rem(50px);
