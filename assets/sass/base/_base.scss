@@ -15,6 +15,10 @@ body {
     font-family: $font-family--text;
     color: $clr-black;
     line-height: $line-height;
+    @include breakpoint(desktop) {
+        width: 70vw;
+        margin: auto;
+    }
 }
 
 h1, h2, h4 {
