@@ -11,7 +11,11 @@
     margin-bottom: rem($card-gap);
     border-radius: 20px;
     box-shadow: $card-shadow;
-    
+    @include breakpoint(tablet) {
+        padding-top: 2px;
+        margin-bottom: rem($card-gap * 2);
+    }
+    // Position the numbered circle
     div {
         position: relative;
         top: 35%;
@@ -20,6 +24,9 @@
     p {
         text-align: center;
         font-weight: $fw--bold;
+        @include breakpoint(tablet) {
+            font-size: rem(20px);
+        }
     }
 
     i {
@@ -27,6 +34,9 @@
         color: $clr-text--grey;
         position: absolute;
         left: 10%;
+        @include breakpoint(tablet) {
+
+        }
     }
 
     &:hover {

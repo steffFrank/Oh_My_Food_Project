@@ -6,5 +6,9 @@
     margin-bottom: rem($margin-bottom + 10px);
     @include b(title) {
         margin-bottom: rem(20px);
+        @include breakpoint(tablet) {
+            text-align: center;
+            margin-bottom: rem(40px);
+        }
     }
 }
