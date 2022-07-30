@@ -14,6 +14,7 @@
     }
 }
 
+// Mixin to create the numbered circle
 @mixin circle-numbered($number: 1, $bg-color: $clr-primary, $color: $clr-white, $size: 25px) {
     position: relative;
     width: $size;
@@ -30,6 +31,7 @@
     }
 }
 
+// Mixin to insert breakpoints
 @mixin breakpoint($breakpoint) {
     @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
         @content;
