@@ -11,6 +11,12 @@
             color: rgba($clr-black, 0.8);
             position: relative;
             right: 20%;
+            @include breakpoint(tablet) {
+                right: 30%;
+            }
+            @include breakpoint(laptop) {
+                right: 35%;
+            }
         }
     }
     @include b(img) {
@@ -19,5 +25,14 @@
         object-fit: cover;
         position: relative;
         bottom: 5px;
+        @include breakpoint(tablet) {
+            height: 480px;
+        }
+        @include breakpoint(laptop) {
+            height: 520px;
+        }
+        @include breakpoint(desktop) {
+            height: 600px;
+        }
     }
 }
