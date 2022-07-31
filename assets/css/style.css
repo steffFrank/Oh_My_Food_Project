@@ -1,3 +1,17 @@
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -30,29 +44,9 @@ h1 {
 h1:first-letter {
   text-transform: lowercase;
 }
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 2.125rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-}
 
 h2 {
   font-size: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  h2 {
-    font-size: 1.875rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  h2 {
-    font-size: 2.125rem;
-  }
 }
 
 h3 {
@@ -60,51 +54,26 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-@media screen and (min-width: 768px) {
-  h3 {
-    font-size: 1.6875rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  h3 {
-    font-size: 1.9375rem;
-  }
-}
 
 h4 {
   font-size: 1rem;
-}
-@media screen and (min-width: 768px) {
-  h4 {
-    font-size: 1.25rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  h4 {
-    font-size: 1.5rem;
-  }
 }
 
 a, a:visited, a:active {
   text-decoration: none;
   font-size: 0.75rem;
+  transition: color 0.5s ease-in-out;
 }
-@media screen and (min-width: 768px) {
-  a, a:visited, a:active {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  a, a:visited, a:active {
-    font-size: 1.25rem;
-  }
+
+a:hover {
+  color: #99E2D0;
 }
 
 .btn {
   width: fit-content;
   height: fit-content;
   padding: 1rem 1.25rem;
-  border-radius: 22px;
+  border-radius: 1.875rem;
   box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.3);
   border: none;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
@@ -311,7 +280,10 @@ a, a:visited, a:active {
 }
 
 .card {
+  width: 100%;
+  max-width: 400px;
   position: relative;
+  margin: auto;
   margin-bottom: 0.875rem;
 }
 .card__text {
@@ -448,29 +420,9 @@ footer li:nth-child(2) i {
 footer i {
   font-size: 0.75rem;
 }
-@media screen and (min-width: 768px) {
-  footer i {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  footer i {
-    font-size: 1.25rem;
-  }
-}
 footer a {
   color: #fff;
   font-size: 1rem;
-}
-@media screen and (min-width: 768px) {
-  footer a {
-    font-size: 1.25rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  footer a {
-    font-size: 1.5rem;
-  }
 }
 footer a::first-letter {
   text-transform: uppercase;
@@ -655,6 +607,11 @@ footer a::first-letter {
   font-weight: 300;
   margin: 0 0 0 0.3125rem;
 }
+@media screen and (min-width: 768px) {
+  .section h3 {
+    text-align: center;
+  }
+}
 .section h4 {
   font-size: 1.0625rem;
   font-weight: 700;
@@ -663,11 +620,22 @@ footer a::first-letter {
   width: 2.5rem;
   height: 0.1875rem;
   background-color: #99E2D0;
-  margin: 0.25rem 0 0.875rem 0;
+  margin: 0.25rem 0 0.875rem 0.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .section .line {
+    height: 0.25rem;
+    margin: 0.375rem auto 0.875rem;
+  }
 }
 .section .button-div {
-  width: 185px;
+  width: 11.5625rem;
   margin: 2.5rem auto;
+}
+@media screen and (min-width: 768px) {
+  .section .button-div {
+    width: 13.75rem;
+  }
 }
 .section .btn {
   width: 100%;
@@ -676,6 +644,21 @@ footer a::first-letter {
 .menu {
   display: grid;
   gap: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    border: 1px solid #99E2D0;
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
