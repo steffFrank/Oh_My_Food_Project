@@ -1,7 +1,10 @@
 // Rules for the card
 
 .card {
+    width: 100%;
+    max-width: 400px;
     position: relative;
+    margin: auto;
     margin-bottom: rem(14px);
     @include b(text) {
         background-color: $clr-white;
