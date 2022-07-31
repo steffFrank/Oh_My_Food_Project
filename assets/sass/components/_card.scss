@@ -2,10 +2,13 @@
 
 .card {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     position: relative;
     margin: auto;
     margin-bottom: rem(14px);
+    @include breakpoint(tablet) {
+        width: 400px;
+    }
     @include b(text) {
         background-color: $clr-white;
         border-radius: $card-radius;
@@ -13,11 +16,18 @@
         padding: rem(13px) rem(10px);
     }
     h4 {
-        margin-bottom: rem(5px);
+        margin: 0 rem(60px) rem(5px) 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     p {
+        margin: 0 rem(60px) 0 0;
         font-size: rem(15px);
         color: rgba($clr-black, 0.8);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     span {
         position: absolute;
