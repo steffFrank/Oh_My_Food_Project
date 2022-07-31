@@ -61,12 +61,9 @@
                 font-size: rem(22px);
             }
         }
-        i {
-            font-size: 24px;
+        .fa-heart {
+            font-size: rem(24px);
             margin: 10px 15px;
-            @include breakpoint(tablet) {
-                font-size: 28px;
-            }
             &:hover {
                 background: $bg-heart--hover;
             }
