@@ -4,7 +4,7 @@
     width: fit-content;
     height: fit-content;
     padding: rem(16px) rem(20px);
-    border-radius: $btn-radius;
+    border-radius: rem($btn-radius);
     box-shadow: $btn-shadow;
     border: none;
     background: $bg-clr--btn;
