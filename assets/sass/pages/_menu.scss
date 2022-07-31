@@ -3,4 +3,15 @@
 .menu {
     display: grid;
     gap: rem(30px);
+    @include breakpoint(tablet) {
+        border: 1px solid $clr-tertiary;
+        border-radius: $card-radius;
+        width: 80%;
+        margin: auto;
+        padding: rem(24px);
+    }
+    @include breakpoint(laptop) {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
