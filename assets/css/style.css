@@ -196,6 +196,10 @@ a:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   margin: auto;
 }
+.resto-card:hover {
+  color: black;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
 .resto-card__img {
   width: 100%;
   height: 170px;
@@ -266,17 +270,15 @@ a:hover {
     font-size: 1.375rem;
   }
 }
-.resto-card__description i {
-  font-size: 24px;
-  margin: 10px 15px;
+.resto-card__description .heart {
+  font-size: 2.75rem;
+  margin: 0 15px;
+  display: block;
+  background-color: white;
+  position: relative;
 }
-@media screen and (min-width: 768px) {
-  .resto-card__description i {
-    font-size: 28px;
-  }
-}
-.resto-card__description i:hover {
-  background: linear-gradient(to top right, #9356dc, #ff79da);
+.resto-card__description .heart:hover .fill-heart {
+  height: 100%;
 }
 
 .card {
