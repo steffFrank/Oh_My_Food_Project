@@ -66,13 +66,17 @@
                 font-size: rem(22px);
             }
         }
+        
         .heart {
             font-size: rem(44px);
             margin: 0 15px;
             display: block;
             position: relative;
+            transform-origin: bottom left;
             &:hover {
-                background: $clr-secondary;
+                background:-webkit-linear-gradient(top, red 30%, blue 70%);
+                background-clip:text;
+                -webkit-background-clip:text;
             }
         }
     }

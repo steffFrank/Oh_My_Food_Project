@@ -1,13 +1,15 @@
-// Rules for the loader
+// // Rules for the loader
 
 .loader {
-    position: absolute;
-    height: 200%;
+    position: fixed;
+    height: 100%;
     width: 100%;
     text-align: center;
     margin: auto;
-    z-index: 100;
-    background: rgba($clr-white, 1);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba($clr-grey--dark, 1);
     animation: loader-disappearing 3s forwards;
     @include breakpoint(desktop) {
         width: 80%;
@@ -18,6 +20,5 @@
         color: $clr-tertiary;
         top: 15%;
         animation: loading 1s infinite;
-        
     }
 }
