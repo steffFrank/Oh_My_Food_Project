@@ -1,3 +1,13 @@
+@keyframes cards-appear {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 html {
   font-size: 16px;
 }
@@ -62,7 +72,7 @@ h4 {
 a, a:visited, a:active {
   text-decoration: none;
   font-size: 0.75rem;
-  transition: color 0.5s ease-in-out;
+  transition: color 1s ease-in-out;
 }
 
 a:hover {
@@ -104,6 +114,7 @@ a:hover {
   margin-bottom: 1.5625rem;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .operations__card {
@@ -195,6 +206,7 @@ a:hover {
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   margin: auto;
+  background-color: white;
 }
 .resto-card:hover {
   color: black;
@@ -274,19 +286,25 @@ a:hover {
   font-size: 2.75rem;
   margin: 0 15px;
   display: block;
-  background-color: white;
   position: relative;
 }
-.resto-card__description .heart:hover .fill-heart {
-  height: 100%;
+.resto-card__description .heart:hover {
+  background: #FF79DA;
 }
 
 .card {
   width: 100%;
-  max-width: 350px;
+  max-width: 375px;
   position: relative;
   margin: auto;
   margin-bottom: 0.875rem;
+  cursor: pointer;
+}
+.card:hover > .card__button {
+  animation: btn-appear 1s forwards;
+}
+.card:hover > .card__button .fa-circle-check {
+  animation: circle-check-rotation 1s forwards;
 }
 @media screen and (min-width: 768px) {
   .card {
@@ -326,6 +344,8 @@ a:hover {
   width: 3.75rem;
   border-radius: 0 15px 15px 0;
   background-color: #99e2d0;
+  transform-origin: right;
+  animation: btn-appear--rev 1s;
 }
 .card__button .fa-circle-check {
   position: absolute;
@@ -673,6 +693,24 @@ footer a::first-letter {
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+
+.appetizers,
+.plates,
+.desserts {
+  opacity: 0;
+}
+
+.appetizers {
+  animation: cards-appear 0.5s 1s linear forwards;
+}
+
+.plates {
+  animation: cards-appear 1.5s 1s linear forwards;
+}
+
+.desserts {
+  animation: cards-appear 2.5s 1s linear forwards;
 }
 
 /*# sourceMappingURL=style.css.map */

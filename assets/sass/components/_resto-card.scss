@@ -8,6 +8,7 @@
     border-radius: 20px;
     box-shadow: $card-shadow;
     margin: auto;
+    background-color: white;
     &:hover {
         color: black;
         box-shadow: $card-shadow--hover;
@@ -69,10 +70,9 @@
             font-size: rem(44px);
             margin: 0 15px;
             display: block;
-            background-color: white;
             position: relative;
-            &:hover .fill-heart {
-                height: 100%;
+            &:hover {
+                background: $clr-secondary;
             }
         }
     }

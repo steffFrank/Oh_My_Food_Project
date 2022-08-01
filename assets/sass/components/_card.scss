@@ -2,10 +2,17 @@
 
 .card {
     width: 100%;
-    max-width: 350px;
+    max-width: 375px;
     position: relative;
     margin: auto;
     margin-bottom: rem(14px);
+    cursor: pointer;
+    &:hover > .card__button {
+        animation: btn-appear $duration forwards;
+        .fa-circle-check {
+            animation: circle-check-rotation $duration forwards;
+        }
+    }
     @include breakpoint(tablet) {
         width: 400px;
     }
@@ -33,6 +40,7 @@
         position: absolute;
         right: rem(20px);
         font-weight: $fw--bold;
+        // margin-right: 65px;
     }
 
     @include b(button) {
@@ -43,6 +51,10 @@
         width: rem(60px);
         border-radius: 0 $card-radius $card-radius 0;
         background-color: rgba($clr-tertiary, 1);
+        transform-origin: right;
+        // opacity: 0;
+        animation: btn-appear--rev $duration;
+
         .fa-circle-check {
             position: absolute;
             left: 30%;

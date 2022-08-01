@@ -74,5 +74,26 @@ $bg-images : (
 );
 
 // ANIMATIONS   
-$duration         : 0.5s;
+$duration         : 1s;
 
+// @keyframes btn-appear {
+//     0% {transform: scaleX(0); opacity: 0.5;}
+//     1% {transform: scaleX(0.1); opacity:0.5}
+//     100% {transform: scale(1); opacity: 1;}
+// }
+
+// @keyframes btn-appear--rev {
+//     0% {transform: scaleX(1); opacity: 1;}
+//     99% {transform: scaleX(0.1); opacity:.5}
+//     100% {transform: scaleX(0); opacity: 0.5;}
+// }
+
+// @keyframes circle-check-rotation {
+//     0% {transform: rotate(0);}
+//     100% {transform: rotate(360deg);}
+// }
+
+@keyframes cards-appear {
+    0% {transform: translateY(50px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1}
+}
