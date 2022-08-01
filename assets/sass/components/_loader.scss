@@ -1,0 +1,23 @@
+// Rules for the loader
+
+.loader {
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    z-index: 100;
+    background: rgba($clr-white, 1);
+    animation: loader-disappearing 3s forwards;
+    @include breakpoint(desktop) {
+        width: 80%;
+    }
+    .fa-spinner {
+        position: relative;
+        font-size: rem(220px);
+        color: $clr-tertiary;
+        top: 15%;
+        animation: loading 1s infinite;
+        
+    }
+}

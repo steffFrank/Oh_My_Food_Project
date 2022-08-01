@@ -97,3 +97,14 @@ $duration         : 1s;
     0% {transform: translateY(50px); opacity: 0;}
     100% {transform: translateY(0); opacity: 1}
 }
+
+@keyframes loading {
+    0% {opacity: 1; transform: rotate(0deg);}
+    100% {opacity: 1; transform: rotate(360deg)}
+}
+
+@keyframes loader-disappearing {
+    0% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0;}
+}
