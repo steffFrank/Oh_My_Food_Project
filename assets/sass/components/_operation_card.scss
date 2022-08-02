@@ -11,13 +11,12 @@
     margin-bottom: rem($card-gap);
     border-radius: 20px;
     box-shadow: $card-shadow;
-    transition: all $duration ease-in-out;
+    transition: $transition;
     cursor: pointer;
     &:hover {
         background-color: $bg-card--hover;
         i {
-            color: $clr-primary;
-            font-size: 18px;
+            animation: icon-reduce $duration linear forwards;
         }
     }
     @include breakpoint(tablet) {
@@ -43,6 +42,7 @@
         color: $clr-text--grey;
         position: absolute;
         left: 10%;
+        transition: $transition;
         @include breakpoint(tablet) {
 
         }

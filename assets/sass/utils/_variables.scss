@@ -44,7 +44,7 @@ $line-height       : 1.2;
 $card-shadow       : 0 4px 15px rgba(0,0,0,0.2);
 $btn-shadow        : 0 2px 5px 3px rgba(0,0,0,0.3);
 $btn-shadow--hover : 0 3px 5px 5px rgba(0,0,0,0.3);
-$card-shadow--hover       : 0 4px 15px rgba(0,0,0,0.4);
+$card-shadow--hover: 0 4px 15px rgba(0,0,0,0.4);
 
 
 // Dimensions
@@ -75,6 +75,7 @@ $bg-images : (
 
 // ANIMATIONS   
 $duration         : 1s;
+$transition       : all $duration ease-in-out;
 
 // @keyframes btn-appear {
 //     0% {transform: scaleX(0); opacity: 0.5;}
@@ -92,7 +93,10 @@ $duration         : 1s;
 //     0% {transform: rotate(0);}
 //     100% {transform: rotate(360deg);}
 // }
-
+@keyframes icon-reduce {
+    0% {transform: scale(1); color: rgba($clr-primary,1);}
+    100% {transform: scale(0.9);color: rgba($clr-primary,1);}
+}
 @keyframes cards-appear {
     0% {transform: translateY(50px); opacity: 0;}
     100% {transform: translateY(0); opacity: 1}
