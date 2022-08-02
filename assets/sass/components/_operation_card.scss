@@ -16,7 +16,7 @@
     &:hover {
         background-color: $bg-card--hover;
         i {
-            animation: icon-reduce $duration linear forwards;
+            animation: icon-scale-down $duration linear forwards;
         }
     }
     @include breakpoint(tablet) {
