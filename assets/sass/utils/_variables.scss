@@ -62,7 +62,7 @@ $card-radius       : 15px;
 $breakpoints : (
     tablet: 768px, 
     laptop: 992px, 
-    desktop:1200px);
+    desktop:1440px);
 
 // Background Images
 
@@ -76,27 +76,14 @@ $bg-images : (
 // ANIMATIONS   
 
 $duration         : 0.4s;
-$transition       : all $duration ease-in-out;
-
-@keyframes btn-appear {
-    0% { transform: translateX(rem(65px));}
-    100% {transform: translateX(0);}
-}
-
-@keyframes btn-appear--rev {
-    0% { transform: translateX(0);}
-    100% {transform: translateX(rem(65px));}
-}
+$timing           : cubic-bezier(.17,.67,.87,.78);
+$transition       : all $duration $timing;
 
 @keyframes circle-check-rotation {
-    0% {transform: rotate(0); opacity: 0}
-    100% {transform: rotate(360deg); opacity: 1;}
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
 }
-// @keyframes circle-check-rotation--rev {
-//     0% {transform: rotate(0); opacity: 1}
-//     90% {transform: rotate(0); opacity: 1;}
-//     100% {transform: rotate(0); opacity: 0;}
-// }
+
 @keyframes icon-scale-down {
     0% {transform: scale(1); color: rgba($clr-primary,1);}
     100% {transform: scale(0.9);color: rgba($clr-primary,1);}
@@ -115,13 +102,4 @@ $transition       : all $duration ease-in-out;
     0% {opacity: 1; z-index: 10}
     90% {opacity: 1; z-index: 10}
     100% {opacity: 0; z-index: -100}
-}
-
-@keyframes move-left {
-    0% {width: 2%;}
-    100% {width: 15%}
-}
-@keyframes move-left--rev {
-    0% {width: 15%;}
-    100% {width: 2%;}
 }

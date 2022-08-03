@@ -23,7 +23,7 @@ body {
     color: $clr-black;
     line-height: $line-height;
     @include breakpoint(desktop) {
-        width: 80vw;
+        width: 90vw;
         margin: auto;
     }
 }
