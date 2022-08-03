@@ -456,11 +456,11 @@ a:hover {
   height: fit-content;
 }
 .heart .far {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.9);
 }
 .heart .fas {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   position: absolute;
   top: 0;
   left: 0;
