@@ -73,18 +73,5 @@
                 font-size: rem(22px);
             }
         }
-        
-        .heart {
-            font-size: rem(44px);
-            margin: 0 15px;
-            display: block;
-            position: relative;
-            transform-origin: bottom left;
-            &:hover {
-                background:-webkit-linear-gradient(top, red 30%, blue 70%);
-                background-clip:content-box;
-                // -webkit-background-clip:text;
-            }
-        }
     }
 }   
