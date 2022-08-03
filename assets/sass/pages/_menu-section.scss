@@ -18,7 +18,7 @@
     @include b(title) {
         position: relative;
         bottom: rem(30px);
-        padding: 0 rem(20px) 0 rem(5px);
+        padding: 0 rem(5px) 0 rem(5px);
         display: flex;
         justify-content: space-between;
     }
