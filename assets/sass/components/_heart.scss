@@ -1,0 +1,32 @@
+// Rules for the like button 
+
+.heart {
+    margin: 5px 20px;
+    position: relative;
+    transition: $transition;
+    height: fit-content;
+    .far {
+        font-size: rem(28px);
+        color: rgba($clr-black, 0.9);
+    }
+    .fas {
+        font-size: rem(28px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        // ====== skymac.org 
+        background: linear-gradient(to top, $clr-secondary, $clr-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        //=========
+        transform-origin: bottom;
+        transform: scaleX(0);
+        animation: heart-fill--rev $duration $timing;
+    }
+    &:hover {
+        .fas {
+            animation: heart-fill $duration $timing forwards;
+        }
+    }
+}
