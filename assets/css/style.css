@@ -603,7 +603,7 @@ footer a::first-letter {
 .main__title {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  margin: 0 0 1.5625rem 0;
+  margin: 0 1.5625rem 0.46875rem 1.5625rem;
 }
 @media screen and (min-width: 768px) {
   .main__title {
@@ -618,7 +618,7 @@ footer a::first-letter {
 .main__subtitle {
   margin-bottom: 1.875rem;
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 @media screen and (min-width: 768px) {
   .main__subtitle {
@@ -631,7 +631,7 @@ footer a::first-letter {
   }
 }
 .main button {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .operations {
