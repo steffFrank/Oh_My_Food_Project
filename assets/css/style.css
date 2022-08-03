@@ -50,6 +50,22 @@
     z-index: -100;
   }
 }
+@keyframes heart-fill {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes heart-fill--rev {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 html {
   font-size: 16px;
 }
@@ -332,17 +348,6 @@ a:hover {
     font-size: 1.375rem;
   }
 }
-.resto-card__description .heart {
-  font-size: 2.75rem;
-  margin: 0 15px;
-  display: block;
-  position: relative;
-  transform-origin: bottom left;
-}
-.resto-card__description .heart:hover {
-  background: -webkit-linear-gradient(top, red 30%, blue 70%);
-  background-clip: content-box;
-}
 
 .card {
   width: 100%;
@@ -416,6 +421,53 @@ a:hover {
   top: 35%;
   font-size: 1.3125rem;
   color: white;
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #eaeaea;
+  animation: loader-disappearing 3s forwards;
+}
+.loader .fa-spinner {
+  position: relative;
+  font-size: 13.75rem;
+  color: #99E2D0;
+  top: 30%;
+  animation: loading 1s infinite;
+}
+
+.heart {
+  margin: 5px 20px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78);
+  height: fit-content;
+}
+.heart .far {
+  font-size: 1.75rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+.heart .fas {
+  font-size: 1.75rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform-origin: bottom;
+  transform: scaleX(0);
+  animation: heart-fill--rev 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78);
+}
+.heart:hover .fas {
+  animation: heart-fill 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) forwards;
 }
 
 .header {
