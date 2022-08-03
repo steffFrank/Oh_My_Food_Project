@@ -2,8 +2,8 @@
 
 .card {
     width: 100%;
-    max-width: 375px;
-    height: rem(70px);
+    // max-width: 375px;
+    // height: auto;
     position: relative;
     margin: auto;
     margin-bottom: rem(14px);
@@ -16,6 +16,7 @@
     &:hover {
         p,
         h4 {
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -38,29 +39,35 @@
         position: relative;
         display: flex;
         color: rgba($clr-black, 0.8);
+        @include m(long) {
+            font-size: 14px !important; // Paragraph too long with different font size
+        }
     }
     h4 {
         width: 80%;
         margin: 0 0 3px 0;
-        white-space: nowrap;
+        @include breakpoint(laptop) {
+            white-space: nowrap;
+        }
     }
     p {
-        width: 80%;
+        width: 75%;
         font-size: 15px;
         white-space: nowrap;
     }
     span {
         position:absolute;
-        right: 20px;
-        font-size: 15px;
+        right: 10px;
+        font-size: 14px;
         font-weight: $fw--bold;
         margin-right: 10px;
+        margin-left: 20px;
     }
 
     @include b(button) {
         position: relative;
         width: 0;
-        height: 100%;
+        // height: auto;
         border-radius: 0 $card-radius $card-radius 0;
         background-color: $clr-tertiary;
         transition: $transition;
@@ -74,3 +81,4 @@
         }
     }
 }
+

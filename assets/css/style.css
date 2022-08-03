@@ -351,8 +351,6 @@ a:hover {
 
 .card {
   width: 100%;
-  max-width: 375px;
-  height: 4.375rem;
   position: relative;
   margin: auto;
   margin-bottom: 0.875rem;
@@ -365,6 +363,7 @@ a:hover {
 }
 .card:hover p,
 .card:hover h4 {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -389,27 +388,34 @@ a:hover {
   display: flex;
   color: rgba(0, 0, 0, 0.8);
 }
+.card__description--long {
+  font-size: 14px !important;
+}
 .card h4 {
   width: 80%;
   margin: 0 0 3px 0;
-  white-space: nowrap;
+}
+@media screen and (min-width: 992px) {
+  .card h4 {
+    white-space: nowrap;
+  }
 }
 .card p {
-  width: 80%;
+  width: 75%;
   font-size: 15px;
   white-space: nowrap;
 }
 .card span {
   position: absolute;
-  right: 20px;
-  font-size: 15px;
+  right: 10px;
+  font-size: 14px;
   font-weight: 700;
   margin-right: 10px;
+  margin-left: 20px;
 }
 .card__button {
   position: relative;
   width: 0;
-  height: 100%;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
   transition: all 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78);
@@ -823,15 +829,15 @@ footer a::first-letter {
 }
 
 .appetizers {
-  animation: cards-appear 0.5s 0.4s linear forwards;
+  animation: cards-appear 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) 1s forwards;
 }
 
 .plates {
-  animation: cards-appear 1.5s 0.4s linear forwards;
+  animation: cards-appear 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) 1.4s forwards;
 }
 
 .desserts {
-  animation: cards-appear 2.5s 0.4s linear forwards;
+  animation: cards-appear 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) 2.4s forwards;
 }
 @media screen and (min-width: 992px) {
   .desserts {
