@@ -2,13 +2,28 @@
 
 .card {
     width: 100%;
-    max-width: 375px;
+    max-width: rem(375px);
+    height: rem(70px);
     position: relative;
     margin: auto;
     margin-bottom: rem(14px);
+    border-radius: $card-radius;
+    background-color: $clr-white;
+    box-shadow: $card-shadow;
+    display: flex;
+    // flex: 1;
+    // justify-content: space-between;
+    overflow: hidden;
     cursor: pointer;
+    &:hover {
+        p,
+        h4 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
     &:hover > .card__button {
-        animation: btn-appear $duration forwards;
+        width: rem(70px);
         .fa-circle-check {
             animation: circle-check-rotation $duration forwards;
         }
@@ -17,46 +32,40 @@
         width: 400px;
     }
     @include b(text) {
-        background-color: $clr-white;
-        border-radius: $card-radius;
-        box-shadow: $card-shadow;
-        padding: rem(13px) rem(10px);
+        position: relative;
+        width: 100%;
+        padding: rem(13px) 0 rem(13px) rem(10px);
+    }
+    @include b(description) {
+        display: flex;
+        justify-content: space-between;
+        color: rgba($clr-black, 0.8);
     }
     h4 {
-        margin: 0 rem(60px) rem(5px) 0;
+        width: 80%;
+        margin: 0 0 3px 0;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
     p {
-        margin: 0 rem(60px) 0 0;
-        font-size: rem(15px);
-        color: rgba($clr-black, 0.8);
+        font-size: 15px;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
     span {
-        position: absolute;
-        right: rem(20px);
+        width: 12%;
+        font-size: 15px;
         font-weight: $fw--bold;
-        // margin-right: 65px;
     }
 
     @include b(button) {
-        position: absolute;
-        right: 0;
-        top: 0;
+        position: relative;
+        width: 0;
         height: 100%;
-        width: rem(60px);
         border-radius: 0 $card-radius $card-radius 0;
-        background-color: rgba($clr-tertiary, 1);
-        transform-origin: right;
-        // opacity: 0;
-        animation: btn-appear--rev $duration;
-
+        background-color: $clr-tertiary;
+        transition: $transition;
+        overflow: hidden;
         .fa-circle-check {
-            position: absolute;
+            position: relative;
             left: 30%;
             top: 35%;
             font-size: rem(21px);
