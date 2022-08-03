@@ -537,13 +537,13 @@ a:hover {
 .header__form i {
   position: relative;
   left: 30%;
-  top: 35px;
+  top: 2.1875rem;
   color: #444444;
 }
 @media screen and (min-width: 768px) {
   .header__form i {
     font-size: 1.25rem;
-    top: 40px;
+    top: 2.8125rem;
   }
 }
 

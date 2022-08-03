@@ -51,11 +51,11 @@
         i {
             position: relative;
             left: 30%;
-            top: 35px;
+            top: rem(35px);
             color: $clr-placeholder;
             @include breakpoint(tablet) {
                 font-size: rem(20px);
-                top: 40px;
+                top: rem(45px);
             }
         }
     }
