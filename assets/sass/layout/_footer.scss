@@ -15,6 +15,10 @@ footer {
     }
     li {
         margin-bottom: 10px;
+        &:first-child,
+        &:nth-child(2) {
+            font-weight: $fw--bold;
+        }
         &:first-child i {
             margin-right: 10px;
         }

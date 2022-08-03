@@ -566,6 +566,9 @@ footer h4 {
 footer li {
   margin-bottom: 10px;
 }
+footer li:first-child, footer li:nth-child(2) {
+  font-weight: 700;
+}
 footer li:first-child i {
   margin-right: 10px;
 }
