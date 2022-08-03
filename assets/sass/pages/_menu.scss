@@ -27,15 +27,15 @@
 }
 
 .appetizers {
-    animation: cards-appear 0.5s $duration linear forwards;
+    animation: cards-appear $duration  $timing 1s forwards ;
 }
 
 .plates {
-    animation: cards-appear 1.5s $duration linear forwards;
+    animation: cards-appear $duration  $timing calc($duration + 1s) forwards ;
 }
 
 .desserts {
-    animation: cards-appear 2.5s $duration linear forwards;
+    animation: cards-appear $duration $timing calc($duration + 2s) forwards ;
     @include breakpoint(laptop) {
         grid-column: span 2;
     }
