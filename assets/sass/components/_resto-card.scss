@@ -10,6 +10,20 @@
     margin: auto;
     background-color: white;
     transition: $transition;
+    @include breakpoint(desktop) {
+        &:nth-child(2n) {
+            grid-row: 2 / 2;
+        }
+        &:nth-child(2) {
+            grid-column: 2 / 3;
+        }
+        &:nth-child(3) {
+            grid-column: 3 / 4; 
+        }
+        &:nth-child(4) {
+            grid-column: 4 / 5;
+        }
+    }
     &:hover {
         color: black;
         box-shadow: $card-shadow--hover;

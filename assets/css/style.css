@@ -269,6 +269,20 @@ a:hover {
   background-color: white;
   transition: all 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78);
 }
+@media screen and (min-width: 1440px) {
+  .resto-card:nth-child(2n) {
+    grid-row: 2/2;
+  }
+  .resto-card:nth-child(2) {
+    grid-column: 2/3;
+  }
+  .resto-card:nth-child(3) {
+    grid-column: 3/4;
+  }
+  .resto-card:nth-child(4) {
+    grid-column: 4/5;
+  }
+}
 .resto-card:hover {
   color: black;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
@@ -692,6 +706,13 @@ footer a::first-letter {
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     padding: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restaurants__cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 0;
   }
 }
 
