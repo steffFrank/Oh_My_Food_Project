@@ -4,11 +4,19 @@
     width: 90%;
     margin: auto;
     margin-bottom: rem($margin-bottom + 10px);
+    @include breakpoint(desktop) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
     @include b(title) {
         margin-bottom: rem(20px);
         @include breakpoint(tablet) {
-            text-align: center;
             margin-bottom: rem(40px);
+        }
+        @include breakpoint(laptop) {
+            text-align: center;
+            grid-column: span 3;
         }
     }
 }
