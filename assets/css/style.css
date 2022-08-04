@@ -199,7 +199,7 @@ a:hover {
 }
 @media screen and (min-width: 768px) {
   .operations__card p {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 .operations__card i {
@@ -209,6 +209,7 @@ a:hover {
   left: 10%;
   transition: all 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78);
 }
+
 .circle-1 {
   position: relative;
   width: 25px;
@@ -745,7 +746,7 @@ footer a::first-letter {
 .section__title {
   position: relative;
   bottom: 1.875rem;
-  padding: 0 1.25rem 0 0.3125rem;
+  padding: 0 0.3125rem 0 0.3125rem;
   display: flex;
   justify-content: space-between;
 }
