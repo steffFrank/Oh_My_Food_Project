@@ -190,7 +190,7 @@ h4 {
 a, a:visited, a:active {
   text-decoration: none;
   font-size: 0.75rem;
-  transition: color 0.4s ease-in-out;
+  transition: all 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78);
 }
 
 a:hover {
@@ -327,7 +327,9 @@ a:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   margin: auto;
   background-color: white;
-  transition: all 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78);
+}
+.resto-card a {
+  color: #000;
 }
 @media screen and (min-width: 1440px) {
   .resto-card:nth-child(2n) {
@@ -342,14 +344,6 @@ a:hover {
   .resto-card:nth-child(4) {
     grid-column: 4/5;
   }
-}
-.resto-card:hover {
-  color: black;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-.resto-card:hover p:nth-child(2),
-.resto-card:hover h4 {
-  color: #FF79DA;
 }
 .resto-card__img {
   width: 100%;
@@ -543,6 +537,7 @@ a:hover {
   position: relative;
   transition: all 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78);
   height: fit-content;
+  cursor: pointer;
 }
 .heart .far {
   font-size: 1.5rem;
