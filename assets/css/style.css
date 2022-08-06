@@ -356,22 +356,22 @@ a:hover {
   }
 }
 .resto-card .resto1 {
-  background: url("../images/restaurants/la_palette.jpg") no-repeat bottom;
+  background: url("../../images/restaurants/la_palette.jpg") no-repeat bottom;
   background-size: cover;
 }
 .resto-card .resto2 {
-  background: url("../images/restaurants/la_note.jpg") no-repeat bottom;
+  background: url("../../images/restaurants/la_note.jpg") no-repeat bottom;
   background-size: cover;
 }
 .resto-card .resto2 {
   background-position: 40% 60%;
 }
 .resto-card .resto3 {
-  background: url("../images/restaurants/france.jpg") no-repeat bottom;
+  background: url("../../images/restaurants/france.jpg") no-repeat bottom;
   background-size: cover;
 }
 .resto-card .resto4 {
-  background: url("../images/restaurants/delice.jpg") no-repeat bottom;
+  background: url("../../images/restaurants/delice.jpg") no-repeat bottom;
   background-size: cover;
 }
 .resto-card__new {
