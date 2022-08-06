@@ -5,6 +5,7 @@
     position: relative;
     transition: $transition;
     height: fit-content;
+    cursor: pointer;
     .far {
         font-size: rem(24px);
         color: rgba($clr-black, 0.9);
