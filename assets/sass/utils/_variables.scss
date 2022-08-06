@@ -113,3 +113,35 @@ $transition       : all $duration $timing;
     0% {transform: scale(1)}
     100% {transform: scale(0)}
 }
+
+@keyframes move-left {
+    0% {transform: translateX(70px);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes move-right {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(rem(70px));}
+}
+@keyframes move-left--span {
+    0% {transform: translateX(rem(50px));}
+    100% {transform: translateX(0);}
+}
+@keyframes move-right--span {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(rem(50px));}
+}
+
+@keyframes move-left--block {
+    0% {width: 100%;}
+    50% {width: calc(100% - 80px);}
+    100% {width: calc(100% - 150px);}
+}
+
+@keyframes move-right--block {
+    0% {width: calc(100% - 150px);}
+    10% {width: calc(100% - 80px);}
+    20% {width: calc(100% - 75px);}
+    50% {width: calc(100% - 35px);}
+    100% {width: 100%}
+}
