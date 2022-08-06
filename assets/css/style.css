@@ -423,6 +423,11 @@ a:hover {
     font-size: 1.375rem;
   }
 }
+.resto-card .heart {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
 
 .card {
   width: 95vw;
