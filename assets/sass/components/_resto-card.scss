@@ -44,7 +44,7 @@
     }
     @each $var, $img in $bg-images {
         .resto#{$var} {
-            background: url("../images/restaurants/#{$img}") no-repeat bottom;
+            background: url("../../images/restaurants/#{$img}") no-repeat bottom;
             background-size: cover;
         }
         @if $var == 2 {
