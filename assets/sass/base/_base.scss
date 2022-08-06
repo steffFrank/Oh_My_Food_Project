@@ -56,7 +56,7 @@ h4 {
 a, a:visited, a:active{
     text-decoration: none;
     font-size: rem(12px);
-    transition: color $duration ease-in-out;
+    transition: color $duration $timing;
 }
 
 a:hover {
