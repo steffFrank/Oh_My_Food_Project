@@ -17,7 +17,7 @@
     }
     @include b(title) {
         position: relative;
-        bottom: rem(30px);
+        bottom: rem(35px);
         padding: 0 rem(5px) 0 rem(5px);
         display: flex;
         justify-content: space-between;
@@ -35,7 +35,7 @@
     }
 
     h3 {
-        font-size: rem(15px);
+        font-size: rem(16px);
         text-transform: uppercase;
         color: $clr-title--menu;
         font-weight: $fw--light;
@@ -52,7 +52,7 @@
         width: rem(40px);
         height: rem(3px);
         background-color: $clr-tertiary;
-        margin: rem(4px) 0 rem(14px) rem(5px);
+        margin: rem(4px) 0 rem(16px) rem(5px);
         @include breakpoint(tablet) {
             height: rem(4px);
             margin: rem(6px) auto rem(14px);
@@ -66,6 +66,7 @@
         }
     }
     .btn {
-        width: 100%;    
+        width: 100%;
+        margin-bottom: rem(20px);    
     }
 }

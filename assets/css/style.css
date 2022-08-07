@@ -102,28 +102,8 @@
   0% {
     width: 100%;
   }
-  50% {
-    width: calc(100% - 80px);
-  }
   100% {
-    width: calc(100% - 150px);
-  }
-}
-@keyframes move-right--block {
-  0% {
-    width: calc(100% - 150px);
-  }
-  10% {
-    width: calc(100% - 80px);
-  }
-  20% {
-    width: calc(100% - 75px);
-  }
-  50% {
-    width: calc(100% - 35px);
-  }
-  100% {
-    width: 100%;
+    width: calc(100% - 70px);
   }
 }
 html {
@@ -229,7 +209,7 @@ a:hover {
   margin: auto;
   height: 75px;
   padding-top: 5px;
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
   margin-bottom: 1.5625rem;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -240,7 +220,7 @@ a:hover {
   background-color: #f2eafb;
 }
 .operations__card:hover i {
-  animation: icon-scale-down 0.4s linear forwards;
+  animation: icon-scale-down 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) forwards;
 }
 @media screen and (min-width: 768px) {
   .operations__card {
@@ -255,6 +235,7 @@ a:hover {
 }
 .operations__card p {
   text-align: center;
+  color: #262626;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
@@ -441,7 +422,7 @@ a:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  animation: move-left--block 10s cubic-bezier(0.17, 0.67, 0.87, 0.78) forwards;
+  animation: move-left--block 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) forwards;
 }
 .card:hover span {
   animation: move-left--span 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) forwards;
@@ -472,7 +453,7 @@ a:hover {
   font-size: 14px !important;
 }
 .card h4 {
-  width: 100%;
+  width: 95%;
   margin: 0 0 3px 0;
 }
 @media screen and (min-width: 992px) {
@@ -485,7 +466,6 @@ a:hover {
   font-size: 15px;
   white-space: nowrap;
   margin-right: 0;
-  animation: move-right--block 5s cubic-bezier(0.17, 0.67, 0.87, 0.78) forwards;
 }
 .card span {
   position: absolute;
@@ -734,7 +714,7 @@ footer a::first-letter {
   }
 }
 .operations__title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.875rem;
 }
 @media screen and (min-width: 768px) {
   .operations__title {
@@ -847,7 +827,7 @@ footer a::first-letter {
 }
 .section__title {
   position: relative;
-  bottom: 1.875rem;
+  bottom: 2.1875rem;
   padding: 0 0.3125rem 0 0.3125rem;
   display: flex;
   justify-content: space-between;
@@ -862,7 +842,7 @@ footer a::first-letter {
   font-size: 1.625rem;
 }
 .section h3 {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 300;
@@ -881,7 +861,7 @@ footer a::first-letter {
   width: 2.5rem;
   height: 0.1875rem;
   background-color: #99E2D0;
-  margin: 0.25rem 0 0.875rem 0.3125rem;
+  margin: 0.25rem 0 1rem 0.3125rem;
 }
 @media screen and (min-width: 768px) {
   .section .line {
@@ -900,6 +880,7 @@ footer a::first-letter {
 }
 .section .btn {
   width: 100%;
+  margin-bottom: 1.25rem;
 }
 
 .menu {

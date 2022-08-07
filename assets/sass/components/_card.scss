@@ -19,7 +19,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            animation: move-left--block 10s $timing forwards;
+            animation: move-left--block $duration $timing forwards;
         }
         span {
             animation: move-left--span $duration $timing forwards;
@@ -51,7 +51,7 @@
         }
     }
     h4 {
-        width: 100%;
+        width: 95%;
         margin: 0 0 3px 0;
         @include breakpoint(laptop) {
             white-space: nowrap;
@@ -62,7 +62,6 @@
         font-size: 15px;
         white-space: nowrap;
         margin-right: 0;
-        animation: move-right--block 5s $timing forwards;
     }
     span {
         position:absolute;

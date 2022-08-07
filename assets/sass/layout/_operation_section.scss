@@ -10,7 +10,7 @@
         grid-template-rows: 1fr 1fr;
     }
     @include b(title) {
-        margin-bottom: rem(20px);
+        margin-bottom: rem(30px);
         @include breakpoint(tablet) {
             margin-bottom: rem(40px);
         }

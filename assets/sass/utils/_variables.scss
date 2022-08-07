@@ -134,14 +134,5 @@ $transition       : all $duration $timing;
 
 @keyframes move-left--block {
     0% {width: 100%;}
-    50% {width: calc(100% - 80px);}
-    100% {width: calc(100% - 150px);}
-}
-
-@keyframes move-right--block {
-    0% {width: calc(100% - 150px);}
-    10% {width: calc(100% - 80px);}
-    20% {width: calc(100% - 75px);}
-    50% {width: calc(100% - 35px);}
-    100% {width: 100%}
+    100% {width: calc(100% - 70px);}
 }

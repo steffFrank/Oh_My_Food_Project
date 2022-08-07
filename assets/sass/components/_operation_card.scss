@@ -7,7 +7,7 @@
     margin: auto;
     height: 75px;
     padding-top: 5px;
-    background-color: $clr-grey--dark;
+    background-color: $clr-grey--light;
     margin-bottom: rem($card-gap);
     border-radius: 20px;
     box-shadow: $card-shadow;
@@ -16,7 +16,7 @@
     &:hover {
         background-color: $bg-card--hover;
         i {
-            animation: icon-scale-down $duration linear forwards;
+            animation: icon-scale-down $duration $timing forwards;
         }
     }
     @include breakpoint(tablet) {
@@ -31,6 +31,7 @@
     }
     p {
         text-align: center;
+        color: lighten($clr-black, 15%);
         font-weight: $fw--bold;
         @include breakpoint(tablet) {
             font-size: rem(16px);
