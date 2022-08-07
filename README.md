@@ -1,19 +1,9 @@
 <div id="top"></div>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/steffFrank/Oh_My_Food_Project">
-    <img src="./assets/images/ohmyfood@2x.svg" alt="Logo" width="80" height="80">
+    <img src="./assets/images/logo/ohmyfood@2x.svg" alt="Logo" width="320px">
   </a>
 
 <h3 align="center">OhMyFood Project</h3>
@@ -51,7 +41,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -63,12 +52,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://stefffrank.github.io/Oh_My_Food_Project/index.html)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 ### Built With
 
