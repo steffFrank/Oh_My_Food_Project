@@ -3,30 +3,26 @@
 .card {
     width: 95vw;
     max-width: 400px;
-    // height: auto;
-    position: relative;
-    margin: auto;
-    margin-bottom: rem(14px);
+    margin: 0 auto rem(14px);
     border-radius: $card-radius;
     background-color: $clr-white;
     box-shadow: $card-shadow;
     display: flex;
+    justify-content: space-between;
     overflow: hidden;
     cursor: pointer;
     &:hover {
-        p,
+        .card__button {
+            width: 60px;
+        }
+    }
+    &:hover {
         h4 {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            animation: move-left--block $duration $timing forwards;
-        }
-        span {
-            animation: move-left--span $duration $timing forwards;
         }
         > .card__button {
-            animation: move-left $duration $timing forwards;
-            
             .fa-circle-check {
                 animation: circle-check-rotation $duration $timing forwards;
             }
@@ -37,49 +33,39 @@
         width: 400px;
     }
     @include b(text) {
-        position: relative;
-        width: 100%;
-        padding: rem(13px) 0 rem(13px) rem(10px);
+        flex: 1;
+        padding: 13px 25px 13px 10px;
+        overflow: hidden;
     }
     @include b(description) {
-        width: 100%;
-        position: relative;
         display: flex;
+        justify-content: space-between;
         color: rgba($clr-black, 0.8);
+        font-size: 15px;
         @include m(long) {
-            font-size: 14px !important; // Paragraph too long with different font size
+            font-size: 14px;
         }
     }
     h4 {
-        width: 95%;
-        margin: 0 0 3px 0;
+        margin: 0 55px 5px 0;
         @include breakpoint(laptop) {
             white-space: nowrap;
         }
     }
     p {
-        width: 100%;
-        font-size: 15px;
         white-space: nowrap;
-        margin-right: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     span {
-        position:absolute;
-        right: 10px;
-        font-size: 14px;
         font-weight: $fw--bold;
-        transform: translateX(50px);
-        animation: move-right--span $duration $timing;
-
+        margin-left: 14px;
     }
 
     @include b(button) {
-        position: relative;
-        width: rem(70px);
-        border-radius: 0 $card-radius $card-radius 0;
+        width: 0;
+        transition: $transition;
         background-color: $clr-tertiary;
-        transform: translateX(rem(70px));
-        animation: move-right $duration $timing forwards;
         overflow: hidden;
         .fa-circle-check {
             position: relative;
