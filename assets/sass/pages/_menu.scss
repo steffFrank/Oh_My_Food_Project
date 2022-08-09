@@ -24,18 +24,20 @@
 .plates,
 .desserts {
     opacity: 0;
+    animation: cards-appear $duration  $timing forwards ;
+    
 }
 
 .appetizers {
-    animation: cards-appear $duration  $timing 1s forwards ;
+    animation-delay: 1s;
 }
 
 .plates {
-    animation: cards-appear $duration  $timing calc($duration + 1s) forwards ;
+    animation-delay: calc($duration + 1s);
 }
 
 .desserts {
-    animation: cards-appear $duration $timing calc($duration + 2s) forwards ;
+    animation-delay: calc($duration + 2s);
     @include breakpoint(laptop) {
         grid-column: span 2;
     }

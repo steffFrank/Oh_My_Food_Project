@@ -858,18 +858,19 @@ footer a::first-letter {
 .plates,
 .desserts {
   opacity: 0;
+  animation: cards-appear 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) forwards;
 }
 
 .appetizers {
-  animation: cards-appear 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) 1s forwards;
+  animation-delay: 1s;
 }
 
 .plates {
-  animation: cards-appear 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) 1.4s forwards;
+  animation-delay: 1.4s;
 }
 
 .desserts {
-  animation: cards-appear 0.4s cubic-bezier(0.17, 0.67, 0.87, 0.78) 2.4s forwards;
+  animation-delay: 2.4s;
 }
 @media screen and (min-width: 992px) {
   .desserts {
