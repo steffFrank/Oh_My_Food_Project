@@ -3,7 +3,7 @@
 .section {
     background-color: $clr-grey--light;
     position: relative;
-    padding: 0 rem(14px) rem(30px) rem(14px);
+    padding: 0 0 rem(30px) 0;
     &::before {
         content: " ";
         position: absolute;
@@ -18,7 +18,7 @@
     @include b(title) {
         position: relative;
         bottom: rem(35px);
-        padding: 0 rem(5px) 0 rem(5px);
+        padding: 0 rem(5px) 0 rem(20px);
         display: flex;
         justify-content: space-between;
     }
@@ -39,7 +39,7 @@
         text-transform: uppercase;
         color: $clr-title--menu;
         font-weight: $fw--light;
-        margin: 0 0 0 rem(5px);
+        margin: 0 0 0 rem(20px);
         @include breakpoint(tablet) {
             text-align: center;
         }
@@ -52,7 +52,7 @@
         width: rem(40px);
         height: rem(3px);
         background-color: $clr-tertiary;
-        margin: rem(4px) 0 rem(16px) rem(5px);
+        margin: rem(4px) 0 rem(16px) rem(20px);
         @include breakpoint(tablet) {
             height: rem(4px);
             margin: rem(6px) auto rem(14px);

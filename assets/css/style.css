@@ -758,7 +758,7 @@ footer a::first-letter {
 .section {
   background-color: #F6F6F6;
   position: relative;
-  padding: 0 0.875rem 1.875rem 0.875rem;
+  padding: 0 0 1.875rem 0;
 }
 .section::before {
   content: " ";
@@ -773,7 +773,7 @@ footer a::first-letter {
 .section__title {
   position: relative;
   bottom: 2.1875rem;
-  padding: 0 0.3125rem 0 0.3125rem;
+  padding: 0 0.3125rem 0 1.25rem;
   display: flex;
   justify-content: space-between;
 }
@@ -791,7 +791,7 @@ footer a::first-letter {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 300;
-  margin: 0 0 0 0.3125rem;
+  margin: 0 0 0 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .section h3 {
@@ -806,7 +806,7 @@ footer a::first-letter {
   width: 2.5rem;
   height: 0.1875rem;
   background-color: #99E2D0;
-  margin: 0.25rem 0 1rem 0.3125rem;
+  margin: 0.25rem 0 1rem 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .section .line {
